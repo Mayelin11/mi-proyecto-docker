@@ -1,0 +1,12 @@
+
+
+services:
+  web:
+    image: nginx:latest
+    container_name: mi-contenedor-web
+    volumes:
+      - ./src:/usr/share/nginx/html
+    ports:
+      - "8080:80"
+
+
